@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10130f">
+  <meta name="description" content="madeeternity — разработчик. Java, Python, базы данных и проекты.">
+  <title>madeeternity — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar wrap">
+    <a class="brand" href="#" aria-label="На главную"><span class="brand-mark">m.</span><span>madeeternity</span></a>
+    <nav class="nav"><a href="#about">Обо мне</a><a href="#projects">Проекты</a><a href="#skills">Навыки</a></nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему"><span class="theme-icon">☼</span><span class="theme-label">Светлая тема</span></button>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR PROJECTS <span class="eyebrow-line"></span> 2026</div>
+        <h1>Создаю цифровые<br><span class="gradient-text">решения.</span></h1>
+        <p class="hero-description">Привет, я <strong>madeeternity</strong> — разработчик. Создаю проекты, изучаю технологии и превращаю идеи в работающие продукты.</p>
+        <div class="hero-actions"><a class="button button-primary" href="https://t.me/madeeternity" target="_blank" rel="noreferrer">Связаться со мной <span>↗</span></a><a class="button button-quiet" href="#projects">Смотреть проекты <span>↓</span></a></div>
+        <div class="social-line"><span class="social-label">FIND ME</span><a href="https://t.me/madeeternity" target="_blank" rel="noreferrer">Telegram <span>↗</span></a><span class="social-separator">/</span><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span>↗</span></a></div>
+      </div>
+      <div class="shader-card">
+        <div class="shader-head"><span>INTERACTIVE PLAYGROUND</span><span class="live-dot">LIVE</span></div>
+        <canvas id="shader" aria-label="Интерактивный лаймовый шейдер"></canvas>
+        <div class="shader-overlay"><span class="shader-caption">MOVE YOUR CURSOR</span><span class="shader-coords" id="coords">00 / 00</span></div>
+        <div class="shader-bottom"><span>REALTIME LIGHT FIELD</span><span class="shader-cross">✳</span></div>
+      </div>
+    </section>
+
+    <section class="profile-strip">
+      <div class="profile-cell"><span class="meta-label">ВОЗРАСТ</span><strong>17 <small>лет</small></strong></div>
+      <div class="profile-cell"><span class="meta-label">СТРАНА</span><strong>Russia</strong></div>
+      <div class="profile-cell"><span class="meta-label">СТАТУС</span><strong class="status"><i></i> Active</strong></div>
+      <div class="profile-cell"><span class="meta-label">НАПРАВЛЕНИЕ</span><strong>Software Development</strong></div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading"><div><div class="section-kicker">01 / SELECTED WORK</div><h2>Мои проекты<span class="lime-dot">.</span></h2></div><span class="section-note">НЕКОТОРЫЕ МОИ РАБОТЫ<br>И ЛИЧНЫЕ РАЗРАБОТКИ</span></div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-visual scary-visual"><img src="assets/scaryworld.jpg" alt="Логотип ScaryWorld"><span class="project-index">PROJECT / 001</span><span class="visual-tag">MINECRAFT</span></div>
+          <div class="project-info"><div class="project-title-row"><h3>ScaryWorld</h3><span class="project-type">GAME SERVER</span></div><p>Гриферский Minecraft-сервер с собственной игровой атмосферой и развитием сообщества.</p><div class="project-actions"><a class="button button-primary small" href="https://t.me/scaryworldsu" target="_blank" rel="noreferrer">Перейти <span>↗</span></a><button class="button button-outline small readme" data-project="scary">README <span>↗</span></button></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual eternity-visual"><div class="eternity-symbol">E<span>.</span></div><span class="project-index">PROJECT / 002</span><span class="visual-tag">CLIENT</span></div>
+          <div class="project-info"><div class="project-title-row"><h3>EternityDLC</h3><span class="project-type">MINECRAFT CLIENT</span></div><p>Чит-клиент для Minecraft, ориентированный на игровые серверы ReallyWorld и Spookytime.</p><div class="project-actions"><a class="button button-primary small" href="https://t.me/eternitydlc" target="_blank" rel="noreferrer">Перейти <span>↗</span></a><button class="button button-outline small readme" data-project="eternity">README <span>↗</span></button></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual radi-visual"><img src="assets/radi-vpn.png" alt="Логотип RadiVPN"><span class="project-index">PROJECT / 003</span><span class="visual-tag">NETWORK</span></div>
+          <div class="project-info"><div class="project-title-row"><h3>RadiVPN</h3><span class="project-type">VPN SERVICE</span></div><p>VPN-сервис с выбором локаций, стабильным подключением и вниманием к скорости и задержке сети.</p><div class="project-actions"><button class="button button-outline small readme" data-project="radi">README <span>↗</span></button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading"><div><div class="section-kicker">02 / TECH STACK</div><h2>Мои навыки<span class="lime-dot">.</span></h2></div><span class="section-note">ТЕХНОЛОГИИ, С КОТОРЫМИ<br>Я РАБОТАЮ</span></div>
+      <div class="skills-layout">
+        <div class="skills-intro"><div class="stack-orbit"><span>DEV</span><i></i><b></b></div><h3>Инструменты<br>для создания.</h3><p>Основной фокус — backend-разработка, базы данных и создание собственных сервисов.</p><div class="skill-legend"><span><i></i> Уровень владения по моей оценке</span></div></div>
+        <div class="skill-list">
+          <div class="skill-group"><div class="skill-group-title">PROGRAMMING LANGUAGES <span>01—03</span></div>
+            <div class="skill" data-value="92"><div><b>Java</b><span>92%</span></div><i><em></em></i></div>
+            <div class="skill" data-value="90"><div><b>Python</b><span>90%</span></div><i><em></em></i></div>
+            <div class="skill" data-value="50"><div><b>C#</b><span>50%</span></div><i><em></em></i></div>
+          </div>
+          <div class="skill-group"><div class="skill-group-title">DATABASES <span>04—06</span></div>
+            <div class="skill" data-value="90"><div><b>MariaDB</b><span>90%</span></div><i><em></em></i></div>
+            <div class="skill" data-value="92"><div><b>MySQL</b><span>92%</span></div><i><em></em></i></div>
+            <div class="skill" data-value="88"><div><b>SQLite</b><span>88%</span></div><i><em></em></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-section">
+      <div class="terminal-intro"><div class="section-kicker">03 / SYSTEM</div><h2>За работой<br>стоит код<span class="lime-dot">.</span></h2><p>Небольшой взгляд на мою рабочую среду.</p></div>
+      <div class="terminal">
+        <div class="terminal-bar"><div class="window-controls"><i></i><i></i><i></i></div><span>terminal — zsh</span><span class="terminal-menu">•••</span></div>
+        <div class="terminal-body"><div><span class="term-green">➜</span> <span class="term-blue">~</span> neofetch</div><div class="terminal-output"><pre class="ascii">  __  __
+ |  \/  |  madeeternity
+ | |\/| |  ─────────────
+ | |  | |  OS: macOS-like
+ |_|  |_|  Shell: zsh
+            Role: Developer</pre><div class="term-details"><p><span>USER</span> madeeternity</p><p><span>AGE</span> 17</p><p><span>LOCATION</span> Russia</p><p><span>STATUS</span> <b>● Active</b></p><p><span>STACK</span> Java · Python · SQL</p></div></div><div class="terminal-prompt"><span class="term-green">➜</span> <span class="term-blue">~</span> <span class="typing">building something new<span class="cursor"></span></span></div></div>
+      </div>
+    </section>
+
+    <footer class="footer"><a class="brand" href="#"><span class="brand-mark">m.</span><span>madeeternity</span></a><span>DESIGNED & BUILT WITH FOCUS.</span><a href="https://t.me/madeeternity" target="_blank" rel="noreferrer">LET'S CONNECT ↗</a></footer>
+  </main>
+
+  <div class="modal-backdrop" id="modal" aria-hidden="true"><section class="readme-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-top"><span>PROJECT DOCUMENTATION</span><button id="closeModal" aria-label="Закрыть">×</button></div><div class="modal-content"><div class="section-kicker">README.MD</div><h2 id="modalTitle">Project</h2><div class="readme-text" id="readmeText"></div></div><div class="modal-footer"><span>MADEETERNITY / PROJECTS</span><button class="button button-outline small" id="doneModal">Закрыть</button></div></section></div>
+  <script src="script.js"></script>
+</body>
+</html>
