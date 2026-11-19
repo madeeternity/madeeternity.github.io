@@ -29,3 +29,11 @@ const commands={
  date:'System date: 2026 · Session: online'
 };
 form.addEventListener('submit',e=>{e.preventDefault();const cmd=input.value.trim().toLowerCase();if(!cmd)return;const line=document.createElement('div');line.className='terminal-history-line';line.innerHTML='<span class="terminal-user">madeeternity</span><span class="terminal-at">@</span><span class="terminal-host">arch</span> <span class="terminal-path">~</span> <span class="terminal-prompt">❯</span> <span class="cmd"></span>';line.querySelector('.cmd').textContent=cmd;history.appendChild(line);const out=document.createElement('div');out.className='terminal-history-line';if(cmd==='clear'){history.innerHTML='';input.value='';return}out.textContent=commands[cmd]||`zsh: command not found: ${cmd} · type "help"`;history.appendChild(out);input.value='';history.scrollIntoView({block:'nearest',behavior:'smooth'})});
+
+// Reveal content as the visitor scrolls.
+(() => {
+  const targets=document.querySelectorAll('.reveal,.project-wide');
+  if(!('IntersectionObserver' in window)){targets.forEach(el=>el.classList.add('is-visible'));return;}
+  const observer=new IntersectionObserver((entries,obs)=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');obs.unobserve(entry.target);}}),{threshold:.12,rootMargin:'0px 0px -45px 0px'});
+  targets.forEach(el=>observer.observe(el));
+})();
